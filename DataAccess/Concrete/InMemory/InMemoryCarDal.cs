@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 using DataAccess.Abstract;
@@ -38,9 +39,19 @@ namespace DataAccess.Concrete.InMemory
             _cars.Remove(deleteToCar);
         }
 
+        public Car Get(Expression<Func<Car, bool>> predicate)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Car> GetAll()
         {
             return _cars;
+        }
+
+        public List<Car> GetAll(Expression<Func<Car, bool>> predicate = null)
+        {
+            throw new NotImplementedException();
         }
 
         public List<Car> GetByID(int id)

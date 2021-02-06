@@ -6,12 +6,20 @@ using Entities.Concrete;
 
 namespace Business.Abstract
 {
-   public interface ICarService
+   public interface ICarService : IEntityService<Car>
     {
-        List<Car> GetAll();
-        List<Car> GetById(int id);
+      
+        Car GetCarById(int id);
+       
+        List<Car> GetByCarsColorId(int id);
+
         void Add(Car car);
-        void Delete( Car car);
-        void Update( Car car);
+
+        List<Car> GetCarsByBrandId(int id);
+
+        
+
+        
+
     }
 }

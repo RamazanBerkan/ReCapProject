@@ -10,14 +10,10 @@ using Entities.Concrete;
 namespace Business.Abstract
 {
     
-    public interface IColorService
+    public interface IColorService:IEntityService<Color>
     {
-        List<Color> GetAll();
-        List<Color> GetById(int id);
-        void Add(Color color );
-        void Delete(Color color);
-        void Update(Color color);
 
+        Color GetClor(int id);
 
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 using DataAccess.Abstract;
@@ -36,9 +37,19 @@ namespace DataAccess.Concrete.InMemory
             _brand.Remove(deletedToBrand);
         }
 
+        public Brand Get(Expression<Func<Brand, bool>> predicate)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Brand> GetAll()
         {
             return _brand;
+        }
+
+        public List<Brand> GetAll(Expression<Func<Brand, bool>> predicate = null)
+        {
+            throw new NotImplementedException();
         }
 
         public List<Brand> GetById(int id)
