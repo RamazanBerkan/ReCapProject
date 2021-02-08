@@ -9,6 +9,7 @@ using DataAccess.Concrete;
 using DataAccess.Concrete.EntityFramework;
 
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace Business.Concrete
 {
@@ -58,6 +59,10 @@ namespace Business.Concrete
         {
             return _carDal.GetAll(p => p.BrandId == id);
         }
-        
+
+        public List<CarDetailDto> GetCarProperties()
+        {
+            return _carDal.GetCarDetail();
+        }
     }
 }

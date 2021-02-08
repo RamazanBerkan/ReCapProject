@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-using Entities.Abstract;
+using Core.Entities;
 
-namespace Entities.Concrete
+namespace Entities.DTOs
 {
-   public class CarDTO:IEntity
+   public class CarDetailDto:IDto
     {
-        public int CarModelYear { get; set; }
+        public string Name { get; set; }
         public string BrandName { get; set; }
         public string ColorName { get; set; }
-
+        public decimal DailyPrice { get; set; }
     }
 }

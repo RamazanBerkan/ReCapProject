@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{BB8B73DC-99D1-4A7A-A65E-79EFAC5BEE37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{BB8B73DC-99D1-4A7A-A65E-79EFAC5BEE37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{0DC62F8F-9753-43D0-ABF8-B71C22262628}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{0DC62F8F-9753-43D0-ABF8-B71C22262628}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{D2764F77-B74F-49D7-9227-11D801AB99A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{D2764F77-B74F-49D7-9227-11D801AB99A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarProjectUI", "CarProjectUI\CarProjectUI.csproj", "{BA6D033B-8BA2-48FC-A622-657D852B56AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarProjectUI", "CarProjectUI\CarProjectUI.csproj", "{BA6D033B-8BA2-48FC-A622-657D852B56AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{E7FC7F14-9065-4AC5-B075-2299F64D7696}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BA6D033B-8BA2-48FC-A622-657D852B56AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA6D033B-8BA2-48FC-A622-657D852B56AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA6D033B-8BA2-48FC-A622-657D852B56AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7FC7F14-9065-4AC5-B075-2299F64D7696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7FC7F14-9065-4AC5-B075-2299F64D7696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7FC7F14-9065-4AC5-B075-2299F64D7696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7FC7F14-9065-4AC5-B075-2299F64D7696}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

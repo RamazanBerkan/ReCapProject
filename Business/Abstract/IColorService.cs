@@ -10,7 +10,7 @@ using Entities.Concrete;
 namespace Business.Abstract
 {
     
-    public interface IColorService:IEntityService<Color>
+    public interface IColorService
     {
 
         Color GetClor(int id);

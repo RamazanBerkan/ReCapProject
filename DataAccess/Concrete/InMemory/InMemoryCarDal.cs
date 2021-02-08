@@ -7,6 +7,7 @@ using System.Text;
 using DataAccess.Abstract;
 
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace DataAccess.Concrete.InMemory
 {
@@ -59,6 +60,11 @@ namespace DataAccess.Concrete.InMemory
 
             return _cars.Where(p => p.Id == id).ToList() ;
 
+        }
+
+        public List<CarDetailDto> GetCarDetail()
+        {
+            throw new NotImplementedException();
         }
 
         public void Update(Car car)
